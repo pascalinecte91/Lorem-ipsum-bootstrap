@@ -9,14 +9,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
-
   <link
     href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Lightbox2 css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -61,7 +62,7 @@
         </div>
       </nav>
 
-      <section class="intro">
+      <section class="intro text-center text-md-start">
         <div class="container">
           <h1 class="display-2 fw-normal fst-italic">Vos idées - Notre savoir
             <h1 />
@@ -70,66 +71,211 @@
             <a href="#nosprojets" class="btn btn-outline-secondary">Nos projets</a>
         </div>
       </section>
-    </header>
+  </header>
 
-     <section id="aPropos" class="border-top border-1 border-secondary py-5">
-      <div class="container"> 
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="border-bottom pb-3">A propos</h2>
-            <p class="fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem accusantium explicabo aperiam distinctio et illo odit nulla obcaecati. Ducimus repellat rerum porro nostrum similique enim et, esse maxime? Officiis, necessitatibus. ipsum dolor, sit amet consectetur adipisicing elit. Fugiat beatae quasi repudiandae fuga minima blanditiis dolorem ea natus, esse incidunt.</p>
-          </div>
+  <section id="aPropos" class="border-top border-1 border-secondary py-5">
+    <div class="container justify ">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="border-bottom pb-3">A propos</h2>
+          <p class=" fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem accusantium explicabo
+            aperiam distinctio et illo odit nulla obcaecati. Ducimus repellat rerum porro nostrum similique enim et,
+            esse maxime? Officiis, necessitatibus. ipsum dolor, sit amet consectetur adipisicing elit. Fugiat beatae
+            quasi repudiandae fuga minima blanditiis dolorem ea natus, esse incidunt.</p>
+        </div>
 
-           <!-- accordion -->
-          <div class="col-md-6  ">
-            <div class="accordion custom-accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Les détails</button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at adipisci modi optio qui commodi placeat, rerum sed! Neque, quam.</div>
-                </div>
+        <!-- accordion -->
+        <div class="col-md-6  ">
+          <div class="accordion custom-accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne">Les détails</button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at
+                  adipisci modi optio qui commodi placeat, rerum sed! Neque, quam.</div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Encore des détails</button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, soluta enim. Illo ducimus deleniti, totam sequi necessitatibus, eligendi eum reiciendis nisi maxime error ut magnam?</div>
-                </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo">Encore des détails</button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, soluta
+                  enim. Illo ducimus deleniti, totam sequi necessitatibus, eligendi eum reiciendis nisi maxime error ut
+                  magnam?</div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">Plus de détails</button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloremque beatae sint quam, rem quisquam tempore tempora est qui amet officiis sunt assumenda magnam laboriosam eveniet! Repellendus?</div>
-                </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree">Plus de détails</button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                  doloremque beatae sint quam, rem quisquam tempore tempora est qui amet officiis sunt assumenda magnam
+                  laboriosam eveniet! Repellendus?</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-     </section>
+    </div>
+  </section>
 
-<section class="suite py-5">
+  <!-- section 3 icones -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
 
-</section>
+        <!-- Première colonne -->
+        <div class="col-md-4 text-center text-md-start">
+
+          <h2 class="d-flex align-items-center justify-content-center justify-content-md-start">
+            <!-- d-flex : applique flexbox à tous les écrans -->
+            <!-- align-items-center : centre verticalement les éléments dans le h2 -->
+            <!-- justify-content-center : centre horizontalement sur les petits écrans -->
+            <!-- justify-content-md-start : aligne à gauche à partir des écrans md -->
+            <i class="fab fa-android fa-2x me-3"></i>
+            <span>Android</span>
+          </h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, nihil error ipsa quasi deserunt
+            molestiae?</p>
+        </div>
+
+        <!-- Deuxième colonne -->
+        <div class="col-md-4 text-center text-md-start">
+          <h2 class="d-flex align-items-center justify-content-center justify-content-md-start">
+            <i class="fa-solid fa-shop fa-2x me-3"></i>
+            <span>Boutique</span>
+          </h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, nihil error ipsa quasi deserunt
+            molestiae?</p>
+        </div>
+
+        <!-- Troisième colonne -->
+        <div class="col-md-4 text-center text-md-start">
+          <h2 class="d-flex align-items-center justify-content-center justify-content-md-start">
+            <i class="fa-solid fa-atom fa-2x me-3"></i>
+            <span>Tech</span>
+          </h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, nihil error ipsa quasi deserunt
+            molestiae?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1ere  banniere -->
+
+  <section class="text-center py-5" id="bannOne">
+    <h1 class="pb-3 pb-md-0">Etes-vous prêt à commencer ?</h1>
+    <!-- 
+    pb-3 : Ajoute un padding-bottom sur tous les écrans
+    pb-md-0 : Supprime le padding-bottom à partir du breakpoint md (≥768px)
+    Cela crée un espace sous le h1 uniquement sur les petits écrans (xs, sm) une fois  le p caché !
+  -->
+    <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iure nulla voluptate,
+      necessitatibus?, ipsum dolor . Rerum, suscipit.</p>
+    <!-- 
+    d-none : Cache le paragraphe par défaut
+    d-md-block : Affiche le paragraphe comme un bloc à partir du breakpoint md (≥768px)
+    Résultat : Le paragraphe est visible uniquement sur les écrans md et plus grands
+  -->
+    <a href="#" class="btn btn-primary">Démarrez maintenant</a>
+
+  </section>
 
 
+  <!-- Section Galerie -->
+
+  <section class="galery py-5" id="galerie">
+    <div class="text-center">
+      <h1 class="kaushan-font py-5">Nos projets
+      </h1>
+      <p>Nos réalisations</p>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-4 g-2">
+        <div class="col">
+          <a href="assets/image-1.jpg" data-lightbox="gallery" data-title="Doberman">
+            <img src="assets/image-1.jpg" class="img-fluid gallery-img" alt="Image 1">
+          </a>
+        </div>
+        <div class="col">
+          <a href="assets/image-2.jpg" data-lightbox="gallery" data-title="Berger blanc suisse">
+            <img src="assets/image-2.jpg" class="img-fluid gallery-img" alt="Image 2">
+          </a>
+        </div>
+        <div class="col">
+          <a href="assets/image-3.jpg" data-lightbox="gallery" data-title="Berger allemand">
+            <img src="assets/image-3.jpg" class="img-fluid gallery-img" alt="Image 3">
+          </a>
+        </div>
+        <div class="col">
+          <a href="assets/image-4.jpg" data-lightbox="gallery" data-title="Berger blanc suisse">
+            <img src="assets/image-4.jpg" class="img-fluid gallery-img" alt="Image 4">
+          </a>
+        </div>
+        <div class="col">
+          <a href="assets/image-5.jpg" data-lightbox="gallery" data-title="Caniche">
+            <img src="assets/image-5.jpg" class="img-fluid gallery-img" alt="Image 5">
+          </a>
+        </div>
+        <div class="col">
+          <a href="assets/image-6.jpg" data-lightbox="gallery" data-title="Champ de lavande">
+            <img src="assets/image-6.jpg" class="img-fluid gallery-img" alt="Image 6">
+          </a>
+        </div>
+        <div class="col">
+          <a href="assets/image-7.jpg" data-lightbox="gallery" data-title="Ecureuil">
+            <img src="assets/image-7.jpg" class="img-fluid gallery-img" alt="Image 7">
+          </a>
+        </div>
+        <div class="col">
+          <a href="assets/image-8.jpg" data-lightbox="gallery" data-title="Biches">
+            <img src="assets/image-8.jpg" class="img-fluid gallery-img" alt="Image 8">
+          </a>
+        </div>
+        <div class="col">
+          <a href="assets/image-9.jpg" data-lightbox="gallery" data-title="Biche">
+            <img src="assets/image-9.jpg" class="img-fluid gallery-img" alt="Image 9">
+          </a>
+        </div>
+        <div class="col">
+          <a href="assets/image-10.jpg" data-lightbox="gallery" data-title="Ratier de Prague">
+            <img src="assets/image-10.jpg" class="img-fluid gallery-img" alt="Image 10">
+          </a>
+        </div>
+        <div class="col">
+          <a href="assets/image-11.jpg" data-lightbox="gallery" data-title="Mouton">
+            <img src="assets/image-11.jpg" class="img-fluid gallery-img" alt="Image 11">
+          </a>
+        </div>
+        <div class="col">
+          <a href="assets/image-12.jpg" data-lightbox="gallery" data-title="Berger blanc suisse">
+            <img src="assets/image-12.jpg" class="img-fluid gallery-img" alt="Image 12">
+          </a>
+        </div>
 
 
+      </div>
+    </div>
+  </section>
 
 
+  <!-- jQuery (nécessaire pour Ekko Lightbox) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Lightbox2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-
-  <!-- fontawesome  Kit -->
-  <script src="https://kit.fontawesome.com/865642936c.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="app.js"></script>
 </body>
 
 </html>

@@ -45,12 +45,19 @@ header {
 .navbar a {
   transition: all 0.4s ease;
 }
+/*  A PROPOS */
 
-/*  Accordion*/
+.justify {
+text-align: justify;
+}
+
+
 
 #aPropos {
   border-bottom: dashed;
 }
+
+/*  Accordion*/
 
 .custom-accordion {
   background-color: #f7f7f7;
@@ -64,14 +71,38 @@ header {
 
 .custom-accordion .accordion-button {
   background-color: #f7f7f7;
-  color: #969090;
+  color: #817d7d; /*  les details */
 }
 
 .custom-accordion .accordion-button:not(.collapsed) {
   background-color: #f7f7f7;
-  color: #969090;
+  color: #969090; /* les details à l ouverture */
 }
 
+#collapseOne,
+#collapseTwo,
+#collapseThree {
+  background-color:white;
+}
+
+/* banniere 1 */
+/* effet parallax */
+#bannOne {
+  position: relative;
+  background: url(assets/banniere1.png);
+  background-position:  right;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+/* galerie */
+
+.gallery-img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
 /* #main-nav {
     transition: all 1s ease;
   }
