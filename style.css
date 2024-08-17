@@ -6,7 +6,7 @@
 
 .lato-thin-font {
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -45,10 +45,11 @@ header {
 .navbar a {
   transition: all 0.4s ease;
 }
+
 /*  A PROPOS */
 
 .justify {
-text-align: justify;
+  text-align: justify;
 }
 
 
@@ -71,18 +72,20 @@ text-align: justify;
 
 .custom-accordion .accordion-button {
   background-color: #f7f7f7;
-  color: #817d7d; /*  les details */
+  color: #817d7d;
+  /*  les details */
 }
 
 .custom-accordion .accordion-button:not(.collapsed) {
   background-color: #f7f7f7;
-  color: #969090; /* les details à l ouverture */
+  color: #969090;
+  /* les details à l ouverture */
 }
 
 #collapseOne,
 #collapseTwo,
 #collapseThree {
-  background-color:white;
+  background-color: white;
 }
 
 /* banniere 1 */
@@ -90,31 +93,57 @@ text-align: justify;
 #bannOne {
   position: relative;
   background: url(assets/banniere1.png);
-  background-position:  right;
+  background-position: right;
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
 }
 
-/* galerie */
-
-
+/* Galerie */
 .gallery-img {
-  width: 400px; /* Largeur fixe */
-  height: 200px; /* Hauteur fixe */
-  object-fit: cover; /* Remplissage de l'image */
-  object-position: 50% 50%; /* Position par défaut */
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
-
-/* Ajustements pour les petits écrans */
 @media (max-width: 576px) {
   .gallery-img {
-    width: 100%; /* Pleine largeur sur petits écrans */
-    height: 350px; /* Hauteur ajustée pour petits écrans */
-    object-position: 50% 50%; /* Centrage sur petits écrans */
+    width: 100%;
+    height: 350px;
+    object-position: 50% 50%;
   }
 }
+
+
+/* banniere 2 */
+#ban2 {
+  position: relative;
+  min-height: 300px;
+  background: url(assets/Banniere2.png) no-repeat center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+#carouselContent {
+  margin-top: 70px;
+  font-size: 35px;
+  color: #000;
+  font-weight: 400;
+}
+
+/* Cards*/
+
+/* .amateur,
+.pro,
+.expert {
+  width:300px;
+  /* height: 500px; */
+
+
+/* .header {
+  /* height: 200px; */
+ 
 /* #main-nav {
     transition: all 1s ease;
   }
@@ -132,3 +161,79 @@ text-align: justify;
     margin-right: 100px;
   }
    */
+
+   /* Le hover pour sue l'animation fonctionne */
+   .card:hover {
+    transform: scale(1.1);
+   }
+   
+   .card {
+    height: 520px;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    border-radius: 0;
+    transition:  0.2s ease-in;
+  }
+  
+  .header {
+    height: 200px; 
+    width: 100%; 
+    position: relative;
+    background: rgba(223, 217, 217, 0.5); 
+  }
+  
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: rgba(80, 66, 66, 0.5);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  }
+  
+  .header h5 {
+    margin: 0;
+    position: absolute;
+    
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: #fff;
+  }
+  
+  .header h2 {
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .card-body {
+    line-height: 2em;
+  }
+  
+  .btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .small-text {
+    font-size: 0.4em;
+    color: black;
+    display: inline-block; /* pour changer le comportement du span */
+    transform: translateY(30%); 
+  }
+
+  
