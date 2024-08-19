@@ -15,6 +15,7 @@
 - [Installation](#installation)
 - [Palette de Couleurs](#palette-de-couleurs)
 - [Typographie](#typographie)
+- [Validator](#validator)
 
 ## Aperçu
 
@@ -23,6 +24,7 @@
 ## Fonctionnalités
 
 - Mise en page réactive avec Bootstrap v.5
+- librairie lightbox
 
 ## Prérequis
 
@@ -36,8 +38,6 @@
 
 ## Typographie
 
-
-- librairie  Ekko
 
 Ce projet utilise les deux polices suivantes :
 
@@ -57,5 +57,7 @@ Ce projet utilise les deux polices suivantes :
 ### Kaushan-script:
 <img src="./assets/template-kaushan.jpg" alt="Aperçu de la page d'accueil" width="400">
 
+### Validator W3C
 
+<img src="./assets/validator-html.jpg" alt="Aperçu de la page d'accueil" width="600">
 
